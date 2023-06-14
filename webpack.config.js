@@ -11,6 +11,14 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    // CÓDIGO NÃO FUNCIONAL ATUALMENTE 14/06
+    // contentBase: path.resolve(__dirname, 'public'),
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),
