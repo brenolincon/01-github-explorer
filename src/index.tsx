@@ -1,6 +1,6 @@
 import { App } from './App'
 import { createRoot } from 'react-dom/client'
-// Aula: Componentes com Typescript
+
 const domNode = document.getElementById('root')!
 const root = createRoot(domNode)
 
